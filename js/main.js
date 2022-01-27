@@ -10,22 +10,51 @@ $(document).ready(function() {
     $("#carousel-2").owlCarousel({
         loop: true,
         center: true,
-        margin: 30,
+        // margin: 30,
         nav: true,
-        items: 3,
+        // items: 3,
         touchDrag: true,
-        smartSpeed: 1500
+        smartSpeed: 1500,
+        responsive: {
+            400: {
+                items: 2,
+                margin: 10
+            },
+            768: {
+                items: 3,
+                margin: 10
+            },
+            1024: {
+                items: 3,
+                margin: 30
+            },
+            1440: {
+                items: 3,
+                margin: 30
+            }
+        }
     });
     $("#carousel-3").owlCarousel({
         loop: true,
         margin: 20,
         nav: false,
         dots: false,
-        items: 4,
         touchDrag: true,
         autoplay: true,
         autoplayTimeout: 5000,
-        smartSpeed: 1500
+        smartSpeed: 1500,
+        responsive: {
+            768: {
+                items: 3,
+                margin: 10
+            },
+            1024: {
+                items: 3
+            },
+            1440: {
+                items: 3
+            }
+        }
     });
 });
 

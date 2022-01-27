@@ -18,8 +18,7 @@
 
     <!-- Booststrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -45,10 +44,10 @@
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-2">
                     <img src="image/logo-hallo 1.png" alt="Logo Hallo" />
                 </div>
-                <div class="col-md-8">
+                <div class="col-8 d-none d-lg-block">
                     <ul>
                         <li><a href="#benefit">Benefit</a></li>
                         <li><a href="#features">Features</a></li>
@@ -56,13 +55,16 @@
                         <li><a href="#steps">Steps</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-2 d-none d-lg-block">
                     <button>
               <a href="#">
                 <p>Log In</p>
                 <i class="fas fa-chevron-right"></i>
               </a>
             </button>
+                </div>
+                <div class="col-10 d-block d-lg-none">
+                    <h1>Test</h1>
                 </div>
             </div>
         </div>
@@ -72,7 +74,7 @@
     <div id="carousel-1" class="owl-1 owl-carousel owl-theme">
         <div id="hero-1" class="slide slide-1 container-fluid px-0" data-aos="fade-up">
             <div class="slide-content row">
-                <div class="text-content col-md-6">
+                <div class="text-content col-md-6 col-xs-12" id="heroHead">
                     <h1>
                         Manage Your <span class="pos-tagging">Event</span> Even
                         <span class="pos-tagging">Faster</span>
@@ -87,14 +89,14 @@
               </a>
             </button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-12" id="heroIllustration">
                     <img src="image/hero-illustration-1.png" alt="Illustration" />
                 </div>
             </div>
         </div>
         <div id="hero-2" class="slide slide-2 container-fluid px-0">
             <div class="slide-content row">
-                <div class="text-content col-md-6">
+                <div class="text-content col-md-6 col-xs-12" id="heroHead">
                     <h1>
                         Manage Your <span class="pos-tagging">Event</span> Even
                         <span class="pos-tagging">Faster</span>
@@ -109,7 +111,7 @@
               </a>
             </button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-12" id="heroIllustration">
                     <img src="image/hero-illustration-1.png" alt="Illustration" />
                 </div>
             </div>
@@ -127,60 +129,126 @@
                     Simply One of The Best Webinar and <br /> Event Management Platform
                 </h2>
             </div>
-            <div class="row" data-aos="fade-up">
-                <div class="card col-md-3 mr-5">
-                    <div class="card-content">
-                        <div class="card-front">
-                            <img src="image/Benefit1.png" alt="Unique Custom URL" />
+            <div class="card-wrapper d-none d-lg-block">
+                <div class="row" data-aos="fade-up">
+                    <div class="card-box col-sm-12 col-md-3 mr-5">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="image/Benefit1.png" alt="Unique Custom URL" />
+                            </div>
+                            <div class="card-back">
+                                <h4 class="card-title">
+                                    Personalized Event Page & Registration Form
+                                </h4>
+                                <p>
+                                    Unique Custom URL for your own event page including the custumizable registration form.
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-back">
-                            <h4 class="card-title">
-                                Personalized Event Page & Registration Form
-                            </h4>
-                            <p>
-                                Unique Custom URL for your own event page including the custumizable registration form.
-                            </p>
+                    </div>
+                    <div class="card-box col-sm-12 col-md-3 mr-5">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="image/Benefit2.png" alt="Participation Management" />
+                            </div>
+                            <div class="card-back">
+                                <h4 class="card-title">Participation management</h4>
+                                <p>
+                                    No more hassle for managing your event participant. Event reminder and email broadcast will help you maintain your participants easily.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box col-sm-12 col-md-3 mr-5">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="image/Benefit3.png" alt="Payment & Zoom Integration" />
+                            </div>
+                            <div class="card-back">
+                                <h4 class="card-title">Payment & Zoom Integration</h4>
+                                <p>
+                                    Fully integrated payment with GO-PAY, Credit Card and Bank Transfer linked directly to your custumizable registration form. If you use Zoom App, registration data can be synchronized seamlessly in the background.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box col-sm-12 col-md-3 mr-5">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="image/Benefit4.png" alt="Digital certificate automation & validation" />
+                            </div>
+                            <div class="card-back">
+                                <h4 class="card-title">
+                                    Digital Certificate Automation & Validation
+                                </h4>
+                                <p>
+                                    Generate and send digital certificate to your selected participant with your own design or preset design. Filter your eligible participant with our optimized AI and validated your digital certificate.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card col-md-3 mr-5">
-                    <div class="card-content">
-                        <div class="card-front">
-                            <img src="image/Benefit2.png" alt="Participation Management" />
-                        </div>
-                        <div class="card-back">
-                            <h4 class="card-title">Participation management</h4>
-                            <p>
-                                No more hassle for managing your event participant. Event reminder and email broadcast will help you maintain your participants easily.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-md-3 mr-5">
-                    <div class="card-content">
-                        <div class="card-front">
-                            <img src="image/Benefit3.png" alt="Payment & Zoom Integration" />
-                        </div>
-                        <div class="card-back">
-                            <h4 class="card-title">Payment & Zoom Integration</h4>
-                            <p>
-                                Fully integrated payment with GO-PAY, Credit Card and Bank Transfer linked directly to your custumizable registration form. If you use Zoom App, registration data can be synchronized seamlessly in the background.
-                            </p>
+            </div>
+            <div class="card-wrapper-mobile d-block d-lg-none">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-md-3 col-sm-12 mr-5 card-mobile">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="image/Benefit1.png" alt="Benefit 1" />
+                            </div>
+                            <div class="text-content">
+                                <div class="card-title">
+                                    <h4>Personalized Event Page & Registration Form</h4>
+                                </div>
+                                <p>
+                                    Unique Custom URL for your own event page including the custumizable registration form.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card col-md-3 mr-5">
-                    <div class="card-content">
-                        <div class="card-front">
-                            <img src="image/Benefit4.png" alt="Digital certificate automation & validation" />
+                    <div class="col-md-3 col-sm-12 mr-5 card-mobile">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="image/Benefit2.png" alt="Benefit 1" />
+                            </div>
+                            <div class="text-content">
+                                <div class="card-title">
+                                    <h4>Personalized Event Page & Registration Form</h4>
+                                </div>
+                                <p>
+                                    No more hassle for managing your event participant. Event reminder and email broadcast will help you maintain your participants easily.
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-back">
-                            <h4 class="card-title">
-                                Digital Certificate Automation & Validation
-                            </h4>
-                            <p>
-                                Generate and send digital certificate to your selected participant with your own design or preset design. Filter your eligible participant with our optimized AI and validated your digital certificate.
-                            </p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mr-5 card-mobile">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="image/Benefit3.png" alt="Benefit 1" />
+                            </div>
+                            <div class="text-content">
+                                <div class="card-title">
+                                    <h4>Personalized Event Page & Registration Form</h4>
+                                </div>
+                                <p>
+                                    Fully integrated payment with GO-PAY, Credit Card and Bank Transfer linked directly to your custumizable registration form. If you use Zoom App, registration data can be synchronized seamlessly in the background.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mr-5 card-mobile">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="image/Benefit4.png" alt="Benefit 1" />
+                            </div>
+                            <div class="text-content">
+                                <div class="card-title">
+                                    <h4>Personalized Event Page & Registration Form</h4>
+                                </div>
+                                <p>
+                                    Generate and send digital certificate to your selected participant with your own design or preset design. Filter your eligible participant with our optimized AI and validated your digital certificate.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -263,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="second-content">
+                <div class="second-content d-none d-md-block">
                     <div class="card-bg--white"></div>
                     <div class="point-wrapper">
                         <div class="point">
@@ -397,6 +465,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="second-content-mobile d-block d-md-none">
+                    <div class="row">
+                        <div class="col-12 box-pricing">
+                            <div class="price">
+                                <p class="txt-one">Intro</p>
+                                <h3>$0 <span>/ Month</span></h3>
+                                <p class="txt-two">Forever</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -406,10 +485,10 @@
         <div class="container">
             <div class="row">
                 <div class="content row">
-                    <div class="col-md-10">
+                    <div class="col-9 col-sm-8">
                         <h3 class="title-cta">Interested in Making an Event With Us ?</h3>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-3 col-sm-4">
                         <button class="btn-cta">
                 <a href="#">
                   <p>Sign Up</p>
@@ -437,21 +516,25 @@
                         <li role="presentation" class="active">
                             <a href="#discover" aria-controls="discover" role="tab" data-toggle="tab">
                                 <i class="fas fa-link" aria-hidden="true"></i>
+                                <h5>Create Your Webinar</h5>
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#strategy" aria-controls="strategy" role="tab" data-toggle="tab">
                                 <i class="far fa-edit" aria-hidden="true"></i>
+                                <h5>Customize Your Registration Form</h5>
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
                                 <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                                <h5>Broadcast Your Custom URL</h5>
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#content" aria-controls="content" role="tab" data-toggle="tab">
                                 <i class="far fa-paper-plane" aria-hidden="true"></i>
+                                <h5>Send Digital Certificate To Your Participants</h5>
                             </a>
                         </li>
                     </ul>
@@ -553,7 +636,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 contact-email">
-                    <h3>Need help or have a question?</h3>
+                    <h2>Need help or have a question?</h2>
                     <button class="btn-footer">
               <a href="mailto:hi@hallo247.com"> hi@hallo247.com </a>
             </button>
