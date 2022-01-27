@@ -20,9 +20,9 @@ nav {
             list-style: none;
             padding: 0;
             li {
-                margin: 100px 0;
+                margin: 75px 0;
                 a {
-                    font-size: 30px;
+                    font-size: 24px;
                     font-weight: $font-weight-medium;
                     color: $black;
                     text-decoration: none;
@@ -30,11 +30,11 @@ nav {
             }
         }
         button {
-            padding: 30px;
+            padding: 20px;
             background-color: white;
             border: none;
             border-radius: 50px;
-            width: 50%;
+            width: 100%;
             a {
                 display: flex;
                 text-decoration: none;
@@ -54,12 +54,12 @@ nav {
                 p {
                     font-family: $font-family-serif;
                     font-weight: $font-weight-medium;
-                    font-size: 30px;
+                    font-size: 24px;
                     margin-right: 15px;
                     margin-bottom: 0;
                 }
                 i {
-                    font-size: 30px;
+                    font-size: 24px;
                     -webkit-transition: transform 0.3s ease-out;
                     -moz-transition: transform 0.3s ease-out;
                     -ms-transition: transform 0.3s ease-out;
