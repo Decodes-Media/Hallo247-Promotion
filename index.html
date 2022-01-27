@@ -44,10 +44,12 @@
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <img src="image/logo-hallo 1.png" alt="Logo Hallo" />
+                <div class="col-10 col-md-3 logo">
+                    <a href="#">
+                        <img src="image/logo-hallo 1.png" alt="Logo Hallo" />
+                    </a>
                 </div>
-                <div class="col-8 d-none d-lg-block">
+                <div class="col-6 col-md-7 d-none d-lg-block">
                     <ul>
                         <li><a href="#benefit">Benefit</a></li>
                         <li><a href="#features">Features</a></li>
@@ -63,10 +65,24 @@
               </a>
             </button>
                 </div>
-                <div class="col-10 d-block d-lg-none">
-                    <h1>Test</h1>
+                <div id="toggler-js-menu" class="col-12 d-block d-lg-none navbar-toggle">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
+        </div>
+        <div id="js-menu" class="responsive-menu">
+            <ul>
+                <li><a href="#benefit">Benefit</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#steps">Steps</a></li>
+            </ul>
+            <button>
+          <a href="#">
+            <p>Log In</p>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </button>
         </div>
     </nav>
     <!-- END:Navbar section -->
@@ -467,11 +483,153 @@
                 </div>
                 <div class="second-content-mobile d-block d-md-none">
                     <div class="row">
-                        <div class="col-12 box-pricing">
-                            <div class="price">
-                                <p class="txt-one">Intro</p>
-                                <h3>$0 <span>/ Month</span></h3>
-                                <p class="txt-two">Forever</p>
+                        <div class="col-12 box-pricing-1">
+                            <div class="box-content">
+                                <div class="head">
+                                    <p class="txt-one">Intro</p>
+                                    <h3>$0 <span>/ Month</span></h3>
+                                    <p class="txt-two">Forever</p>
+                                </div>
+                                <div class="package">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>3 active events*</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Registration Form</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Zoom Integration</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Digital Certificate</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Payment Integrations**</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 btn-pricing">
+                                        <button>
+                        <a href="#">
+                          <p>Launch Now</p>
+                        </a>
+                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 box-pricing-2">
+                            <div class="box-content">
+                                <div class="head">
+                                    <p class="txt-one">Intro</p>
+                                    <h3>$5 <span>/ Month</span></h3>
+                                    <p class="txt-two">Per 100 additional participants</p>
+                                </div>
+                                <div class="package">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>
+                                                <100 Participants</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>3 active events*</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Personalized Event Page</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Registration Form</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Custom URL</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Zoom Integration</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Event Reminder</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Digital Certificate</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Payment Integrations**</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 btn-pricing">
+                                        <button>
+                        <a href="#">
+                          <p>Launch Now</p>
+                        </a>
+                      </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -485,10 +643,10 @@
         <div class="container">
             <div class="row">
                 <div class="content row">
-                    <div class="col-9 col-sm-8">
+                    <div class="col-12 col-md-9 col-sm-8">
                         <h3 class="title-cta">Interested in Making an Event With Us ?</h3>
                     </div>
-                    <div class="col-3 col-sm-4">
+                    <div class="col-12 col-md-3 col-sm-4">
                         <button class="btn-cta">
                 <a href="#">
                   <p>Sign Up</p>
@@ -587,22 +745,163 @@
         <div class="container">
             <div id="carousel-3" class="owl-3 owl-carousel">
                 <div id="client-1" class="slide slide-1">
-                    <img src="image/alibaba.png" alt="" />
+                    <img src="image/Logo_AQUA-DANONE.png" alt="Aqua Danone" />
+                </div>
+                <div id="client-1" class="slide slide-1">
+                    <img src="image/Logo_ASWGI.png" alt="ASWGI" />
                 </div>
                 <div id="client-2" class="slide slide-2">
-                    <img src="image/zoover.png" alt="" />
+                    <img src="image/Logo_BI.png" alt="Bank Indonesia" />
                 </div>
                 <div id="client-3" class="slide slide-3">
-                    <img src="image/Zoom.png" alt="" />
+                    <img src="image/Logo_BINUS.png" alt="BINUS" />
                 </div>
                 <div id="client-4" class="slide slide-4">
-                    <img src="image/trello.png" alt="" />
+                    <img src="image/Logo_BISHOP.png" alt="BISHOP" />
                 </div>
                 <div id="client-5" class="slide slide-5">
-                    <img src="image/slack.png" alt="" />
+                    <img src="image/Logo_CIMSA.png" alt="CIMSA" />
                 </div>
                 <div id="client-6" class="slide slide-6">
-                    <img src="image/jira.png" alt="" />
+                    <img src="image/Logo_FMI.png" alt="FMI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_GRAB.png" alt="GRAB" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_IDI.png" alt="IDI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_IKAHIMBI.png" alt="IKAHIMBI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_INDIRA.png" alt="INDIRA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_INHA.png" alt="INHA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_MASEI.png" alt="MASEI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_MES.png" alt="MES" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_MOJOKERTO.png" alt="MOJOKERTO" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_MULTI-BINTANG.png" alt="MULTI BINTANG" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_NATIONAL-HOSPITAL.png" alt="National Hospital" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PEMPROV-JATIM.png" alt="Pemprov JATIM" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PERSI.png" alt="PERSI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PPI.png" alt="PPI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PPNI.png" alt="PPNI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PPTI.png" alt="PPTI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PREMIER-SURABAYA.png" alt="RS Premier Surabaya" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_PSGIS-1.png" alt="PSGIS" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_RAMSAY-SIME-DARBY.png" alt="RAMSAY SIME Logo_RAMSAY-SIME-DARBY" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_RUMAH-BUMN.png" alt="Rumah BUMN" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_SAMATOR.png" alt="Samator" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_SMPK.png" alt="SMPK" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_THE-WHITE-RIBBON-ALLIANCE-1.png" alt="The White Ribbon Alliance" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UDIINUS.png" alt="UDINUS" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UIN.png" alt="UIN" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UKDW.png" alt="UKDW" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UKSW.png" alt="UKSW" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UMS.png" alt="UMS" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNAIR.png" alt="UNAIR" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNDIP.png" alt="UNDIP" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNFPA-1.png" alt="UNFPA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNHAS.png" alt="UNHAS" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNIBOS.png" alt="UNIBOS" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNIKA.png" alt="UNIKA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNISSULA.png" alt="UNINSULA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNW.png" alt="UNW" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_USM.png" alt="USM" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_YOGA.png" alt="YOGA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_BKKBN.png" alt="BKKBN" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_HIMASEPA.png" alt="HIMASEPA" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_IPB.png" alt="IPB" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_ITB.png" alt="ITB" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UI.png" alt="UI" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNS.png" alt="UNS" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_UNY.png" alt="UNY" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_WHITE-RIBBON.png" alt="White Ribbon" />
+                </div>
+                <div id="client-6" class="slide slide-6">
+                    <img src="image/Logo_YKPN.png" alt="YKPN" />
                 </div>
             </div>
         </div>
@@ -611,6 +910,12 @@
     <!-- START: Footer -->
     <footer>
         <div class="container">
+            <div class="col-12 logo">
+                <a href="#">
+                    <img src="image/logo-hallo 1.png" alt="Logo Hallo 24/7" />
+                </a>
+            </div>
+            <hr />
             <div class="row">
                 <div class="col-md-3">
                     <h4>Hallo 24/7</h4>
@@ -634,6 +939,28 @@
                     <a href="tel:6282140748164" target="_blank">
                         <p>Phone: +62821 4074 8164</p>
                     </a>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/hallohr247/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/hallohr247/" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/message/CIKAG53WJBPYE1?src=qr" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCX0VONRfQzonh3FXaSo6lxA" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md-4 contact-email">
                     <h2>Need help or have a question?</h2>

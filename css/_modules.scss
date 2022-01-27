@@ -235,7 +235,26 @@
             }
         }
         .owl-nav {
-            display: none;
+            button {
+                border: none !important;
+                outline: none !important;
+            }
+            .owl-prev,
+            .owl-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 60px !important;
+                font-weight: $font-weight-bold !important;
+                background: none !important;
+                color: $black !important;
+            }
+            .owl-prev {
+                left: -3%;
+            }
+            .owl-next {
+                right: -3%;
+            }
         }
         .owl-dots {
             width: 100%;
@@ -616,15 +635,18 @@
     background-color: #F8F8F8;
     padding: 100px 0;
     .owl-carousel {
+        .owl-item {
+            width: 117px;
+        }
         .slide {
-            width: 297px;
-            height: 117px;
+            width: 90%;
+            height: auto;
             overflow: hidden;
             object-fit: cover;
             img {
                 width: 100%;
                 height: auto;
-                transform: scale(0.9);
+                // transform: scale(0.9);
             }
         }
     }
@@ -676,6 +698,16 @@
         }
     }
     .features-section {
+        .owl-2 {
+            .owl-nav {
+                .owl-prev {
+                    left: -3%;
+                }
+                .owl-next {
+                    right: -3%;
+                }
+            }
+        }
         .mockup {
             transform: scale(0.889);
             top: 241px;
@@ -720,6 +752,16 @@
         }
     }
     .features-section {
+        .owl-2 {
+            .owl-nav {
+                .owl-prev {
+                    left: -3%;
+                }
+                .owl-next {
+                    right: -3%;
+                }
+            }
+        }
         .mockup {
             top: 165px;
             right: 260px;
@@ -790,10 +832,10 @@
             }
         }
         .mockup {
-            top: 100px;
+            top: 110px;
             right: 260px;
             left: 175px;
-            transform: scale(0.53);
+            transform: scale(0.56);
         }
     }
     .pricing-section {
@@ -827,19 +869,31 @@
                 width: 230px;
             }
             .slide {
-                width: 230px;
+                width: 90%;
                 height: auto;
             }
         }
     }
 }
 
-@media screen and (max-width: $bp-xxs) {
+@media screen and (max-width: $bp-xs) {
+    .owl-1 {
+        .slide {
+            .slide-content {
+                padding: 20px 0 50px;
+            }
+        }
+    }
     .features-section {
+        .owl-2 {
+            .owl-dots {
+                bottom: -25%;
+            }
+        }
         .mockup {
-            top: 110px;
-            left: 84px;
-            transform: scale(0.43);
+            top: 139px;
+            left: 126px;
+            transform: scale(0.299);
         }
     }
     .pricing-section {
@@ -849,6 +903,364 @@
                     width: 100%;
                     margin: 0;
                 }
+            }
+        }
+        .second-content-mobile {
+            .box-pricing-1 {
+                .box-content {
+                    padding: 40px;
+                    background-color: $white;
+                    border-radius: 10px;
+                    .head {
+                        p,
+                        h3 {
+                            font-family: $font-family-serif;
+                        }
+                        p {
+                            font-weight: $font-weight-medium;
+                        }
+                        h3 {
+                            font-size: 35px !important;
+                            margin-bottom: 16px;
+                            span {
+                                font-size: 20px;
+                                color: $grey;
+                                font-weight: $font-weight-regular;
+                            }
+                        }
+                    }
+                    .package {
+                        margin-top: 50px;
+                        .row {
+                            padding: 15px 0;
+                            i {
+                                font-size: 30px;
+                                color: $primary-color;
+                            }
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                        .btn-pricing {
+                            margin-top: 30px;
+                            button {
+                                background-color: $primary-color;
+                                border: none;
+                                padding: 20px;
+                                width: 100%;
+                                border-radius: 10px;
+                                a {
+                                    display: flex;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    color: $white;
+                                    font-family: $font-family-serif;
+                                    font-size: 20px;
+                                    font-weight: $font-weight-medium;
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                                &:active {
+                                    background-color: $secondary-color;
+                                    color: $primary-color;
+                                    transition: all 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .box-pricing-2 {
+                margin-top: 50px;
+                .box-content {
+                    padding: 40px;
+                    background-color: $primary-color;
+                    border-radius: 10px;
+                    .head {
+                        p,
+                        h3 {
+                            font-family: $font-family-serif;
+                        }
+                        p {
+                            font-weight: $font-weight-medium;
+                        }
+                        h3 {
+                            font-size: 35px !important;
+                            margin-bottom: 16px;
+                            span {
+                                font-size: 20px;
+                                color: rgb(44, 44, 44);
+                                font-weight: $font-weight-regular;
+                            }
+                        }
+                    }
+                    .package {
+                        margin-top: 50px;
+                        .row {
+                            padding: 15px 0;
+                            i {
+                                font-size: 30px;
+                                color: #FCFF80;
+                            }
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                        .btn-pricing {
+                            margin-top: 30px;
+                            button {
+                                background-color: $white;
+                                border: none;
+                                padding: 20px;
+                                width: 100%;
+                                border-radius: 10px;
+                                a {
+                                    display: flex;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    color: $primary-color;
+                                    font-family: $font-family-serif;
+                                    font-size: 20px;
+                                    font-weight: $font-weight-medium;
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                                &:active {
+                                    background-color: $secondary-color;
+                                    color: $primary-color;
+                                    transition: all 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cta-section {
+        .row {
+            justify-content: center;
+            .content {
+                .title-cta {
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .step-section {
+        .title-section {
+            margin-bottom: 50px;
+        }
+        .nav-tabs {
+            &.process-model {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .client-section {
+        .owl-carousel {
+            .slide {
+                width: 170px;
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-xxs) {
+    .owl-1 {
+        .slide {
+            .slide-content {
+                padding: 20px 0 50px;
+            }
+        }
+    }
+    .features-section {
+        .owl-2 {
+            .owl-dots {
+                bottom: -25%;
+            }
+        }
+        .mockup {
+            top: 139px;
+            left: 124px;
+            transform: scale(0.291);
+        }
+    }
+    .pricing-section {
+        .first-content {
+            .contact-us {
+                .row {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+        .second-content-mobile {
+            .box-pricing-1 {
+                .box-content {
+                    padding: 40px;
+                    background-color: $white;
+                    border-radius: 10px;
+                    .head {
+                        p,
+                        h3 {
+                            font-family: $font-family-serif;
+                        }
+                        p {
+                            font-weight: $font-weight-medium;
+                        }
+                        h3 {
+                            font-size: 35px !important;
+                            margin-bottom: 16px;
+                            span {
+                                font-size: 20px;
+                                color: $grey;
+                                font-weight: $font-weight-regular;
+                            }
+                        }
+                    }
+                    .package {
+                        margin-top: 50px;
+                        .row {
+                            padding: 15px 0;
+                            i {
+                                font-size: 30px;
+                                color: $primary-color;
+                            }
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                        .btn-pricing {
+                            margin-top: 30px;
+                            button {
+                                background-color: $primary-color;
+                                border: none;
+                                padding: 20px;
+                                width: 100%;
+                                border-radius: 10px;
+                                a {
+                                    display: flex;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    color: $white;
+                                    font-family: $font-family-serif;
+                                    font-size: 20px;
+                                    font-weight: $font-weight-medium;
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                                &:active {
+                                    background-color: $secondary-color;
+                                    color: $primary-color;
+                                    transition: all 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .box-pricing-2 {
+                margin-top: 50px;
+                .box-content {
+                    padding: 40px;
+                    background-color: $primary-color;
+                    border-radius: 10px;
+                    .head {
+                        p,
+                        h3 {
+                            font-family: $font-family-serif;
+                        }
+                        p {
+                            font-weight: $font-weight-medium;
+                        }
+                        h3 {
+                            font-size: 35px !important;
+                            margin-bottom: 16px;
+                            span {
+                                font-size: 20px;
+                                color: rgb(44, 44, 44);
+                                font-weight: $font-weight-regular;
+                            }
+                        }
+                    }
+                    .package {
+                        margin-top: 50px;
+                        .row {
+                            padding: 15px 0;
+                            i {
+                                font-size: 30px;
+                                color: #FCFF80;
+                            }
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                        .btn-pricing {
+                            margin-top: 30px;
+                            button {
+                                background-color: $white;
+                                border: none;
+                                padding: 20px;
+                                width: 100%;
+                                border-radius: 10px;
+                                a {
+                                    display: flex;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    color: $primary-color;
+                                    font-family: $font-family-serif;
+                                    font-size: 20px;
+                                    font-weight: $font-weight-medium;
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                                &:active {
+                                    background-color: $secondary-color;
+                                    color: $primary-color;
+                                    transition: all 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cta-section {
+        .row {
+            justify-content: center;
+            .content {
+                .title-cta {
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .step-section {
+        .nav-tabs {
+            &.process-model {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .client-section {
+        .owl-carousel {
+            .slide {
+                width: 170px;
             }
         }
     }

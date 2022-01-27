@@ -122,11 +122,101 @@ p {
 }
 
 nav {
+  position: relative;
   padding: 30px 0;
   background-color: #FFF8DC;
 }
 
+nav .responsive-menu {
+  display: none;
+  background-color: #FAA831;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  z-index: 5;
+  padding: 100px 50px;
+  width: 100%;
+  -webkit-transform: translateX(90%);
+  transform: translateX(90%);
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+nav .responsive-menu ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+nav .responsive-menu ul li {
+  margin: 100px 0;
+}
+
+nav .responsive-menu ul li a {
+  font-size: 30px;
+  font-weight: 500;
+  color: #242424;
+  text-decoration: none;
+}
+
+nav .responsive-menu button {
+  padding: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  width: 50%;
+}
+
+nav .responsive-menu button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #FAA831;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .responsive-menu button a:hover {
+  color: #FFFFFF;
+}
+
+nav .responsive-menu button a:hover i {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+nav .responsive-menu button a p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+nav .responsive-menu button a i {
+  font-size: 30px;
+  -webkit-transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+nav .responsive-menu.active {
+  display: block;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
 nav .row {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +225,14 @@ nav .row {
           align-items: center;
 }
 
-nav img {
+nav .row .navbar-toggle {
+  position: absolute;
+  text-align: right;
+  font-size: 30px;
+  z-index: 10;
+}
+
+nav .row img {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +244,7 @@ nav img {
   height: auto;
 }
 
-nav ul {
+nav .row ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,11 +255,11 @@ nav ul {
   margin: 0;
 }
 
-nav ul li {
+nav .row ul li {
   margin-right: 30px;
 }
 
-nav ul li a {
+nav .row ul li a {
   text-decoration: none;
   color: #242424;
   font-family: "Roboto", sans-serif;
@@ -170,11 +267,11 @@ nav ul li a {
   font-size: 18px;
 }
 
-nav ul li a:hover {
+nav .row ul li a:hover {
   color: #FAA831;
 }
 
-nav button {
+nav .row button {
   padding: 18px 36px;
   background-color: rgba(250, 168, 49, 0.95);
   border: none;
@@ -182,13 +279,13 @@ nav button {
   width: 100%;
 }
 
-nav button:hover {
+nav .row button:hover {
   background-color: rgba(250, 168, 49, 0.7);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-nav button a {
+nav .row button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,16 +299,16 @@ nav button a {
           justify-content: center;
 }
 
-nav button a:hover {
+nav .row button a:hover {
   color: #FFFFFF;
 }
 
-nav button a:hover i {
+nav .row button a:hover i {
   -webkit-transform: translateX(5px);
   transform: translateX(5px);
 }
 
-nav button a p {
+nav .row button a p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -219,7 +316,7 @@ nav button a p {
   margin-bottom: 0;
 }
 
-nav button a i {
+nav .row button a i {
   -webkit-transition: transform 0.3s ease-out;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
@@ -232,11 +329,29 @@ footer {
   padding: 90px 0;
 }
 
+footer .logo {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+footer .logo img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+footer hr {
+  border: 1px solid #FFFFFF;
+  margin-bottom: 60px;
+}
+
 footer h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 footer .site-links {
@@ -279,6 +394,39 @@ footer .contact a p:hover {
   transition: 0.3s;
 }
 
+footer .contact ul {
+  margin: 30px 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer .contact ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .contact ul li a {
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #FAA831;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact ul li a i {
+  font-size: 20px;
+}
+
 footer .contact-email {
   float: right;
 }
@@ -318,11 +466,11 @@ footer .contact-email .btn-footer a {
 }
 
 @media screen and (max-width: 1204px) {
-  nav img {
+  nav .row img {
     width: 250px;
   }
-  nav button {
-    padding: 18px 30px;
+  nav .row button {
+    padding: 18px 30px !important;
   }
   footer .site-links li a {
     font-size: 20px;
@@ -333,11 +481,57 @@ footer .contact-email .btn-footer a {
 }
 
 @media screen and (max-width: 768px) {
+  footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   footer .contact-email .btn-footer {
     padding: 20px 40px;
   }
   footer .contact-email .btn-footer a {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  nav .logo a {
+    float: left;
+  }
+  nav .logo a img {
+    width: 200px;
+  }
+  nav .navbar-toggle {
+    text-align: center;
+    cursor: pointer;
+  }
+  nav .navbar-toggle i {
+    color: #242424;
+    font-size: 24px;
+  }
+  nav .responsive-menu {
+    padding: 30px 20px;
+  }
+  nav .responsive-menu ul li {
+    margin: 65px 0;
+  }
+  nav .responsive-menu ul li a {
+    font-size: 24px;
+  }
+  nav .responsive-menu button a p {
+    font-size: 24px;
+  }
+  footer .contact {
+    margin-top: 20px;
+  }
+  footer .contact h4 {
+    margin-bottom: 20px;
+  }
+  footer .contact-email {
+    margin-top: 20px;
   }
 }
 
@@ -642,8 +836,29 @@ footer .contact-email .btn-footer a {
           transform: scale(1);
 }
 
-.features-section .owl-2 .owl-nav {
-  display: none;
+.features-section .owl-2 .owl-nav button {
+  border: none !important;
+  outline: none !important;
+}
+
+.features-section .owl-2 .owl-nav .owl-prev,
+.features-section .owl-2 .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 60px !important;
+  font-weight: 700 !important;
+  background: none !important;
+  color: #242424 !important;
+}
+
+.features-section .owl-2 .owl-nav .owl-prev {
+  left: -3%;
+}
+
+.features-section .owl-2 .owl-nav .owl-next {
+  right: -3%;
 }
 
 .features-section .owl-2 .owl-dots {
@@ -1089,9 +1304,13 @@ footer .contact-email .btn-footer a {
   padding: 100px 0;
 }
 
+.client-section .owl-carousel .owl-item {
+  width: 117px;
+}
+
 .client-section .owl-carousel .slide {
-  width: 297px;
-  height: 117px;
+  width: 90%;
+  height: auto;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1100,8 +1319,6 @@ footer .contact-email .btn-footer a {
 .client-section .owl-carousel .slide img {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 #button {
@@ -1146,6 +1363,12 @@ footer .contact-email .btn-footer a {
   .owl-1 .slide .slide-content .text-content {
     padding-left: 125px;
   }
+  .features-section .owl-2 .owl-nav .owl-prev {
+    left: -3%;
+  }
+  .features-section .owl-2 .owl-nav .owl-next {
+    right: -3%;
+  }
   .features-section .mockup {
     -webkit-transform: scale(0.889);
             transform: scale(0.889);
@@ -1172,6 +1395,12 @@ footer .contact-email .btn-footer a {
   }
   .benefit-section .card-box .card-content .card-back p {
     font-size: 18px !important;
+  }
+  .features-section .owl-2 .owl-nav .owl-prev {
+    left: -3%;
+  }
+  .features-section .owl-2 .owl-nav .owl-next {
+    right: -3%;
   }
   .features-section .mockup {
     top: 165px;
@@ -1224,11 +1453,11 @@ footer .contact-email .btn-footer a {
     bottom: -14%;
   }
   .features-section .mockup {
-    top: 100px;
+    top: 110px;
     right: 260px;
     left: 175px;
-    -webkit-transform: scale(0.53);
-            transform: scale(0.53);
+    -webkit-transform: scale(0.56);
+            transform: scale(0.56);
   }
   .pricing-section .first-content .contact-us .row {
     padding: 35px 30px;
@@ -1251,21 +1480,352 @@ footer .contact-email .btn-footer a {
     width: 230px;
   }
   .client-section .owl-carousel .slide {
-    width: 230px;
+    width: 90%;
     height: auto;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 575px) {
+  .owl-1 .slide .slide-content {
+    padding: 20px 0 50px;
+  }
+  .features-section .owl-2 .owl-dots {
+    bottom: -25%;
+  }
   .features-section .mockup {
-    top: 110px;
-    left: 84px;
-    -webkit-transform: scale(0.43);
-            transform: scale(0.43);
+    top: 139px;
+    left: 126px;
+    -webkit-transform: scale(0.299);
+            transform: scale(0.299);
   }
   .pricing-section .first-content .contact-us .row {
     width: 100%;
     margin: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p,
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
+    font-family: "Roboto", sans-serif;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p {
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
+    font-size: 35px !important;
+    margin-bottom: 16px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 span {
+    font-size: 20px;
+    color: #969696;
+    font-weight: 400;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package {
+    margin-top: 50px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row {
+    padding: 15px 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row i {
+    font-size: 30px;
+    color: #FAA831;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row p {
+    margin-bottom: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing {
+    margin-top: 30px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button {
+    background-color: #FAA831;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button a p {
+    margin: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button:active {
+    background-color: #FFF8DC;
+    color: #FAA831;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 {
+    margin-top: 50px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content {
+    padding: 40px;
+    background-color: #FAA831;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p,
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
+    font-family: "Roboto", sans-serif;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p {
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
+    font-size: 35px !important;
+    margin-bottom: 16px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 span {
+    font-size: 20px;
+    color: #2c2c2c;
+    font-weight: 400;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package {
+    margin-top: 50px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row {
+    padding: 15px 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row i {
+    font-size: 30px;
+    color: #FCFF80;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row p {
+    margin-bottom: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing {
+    margin-top: 30px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    color: #FAA831;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button a p {
+    margin: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button:active {
+    background-color: #FFF8DC;
+    color: #FAA831;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .cta-section .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cta-section .row .content .title-cta {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .step-section .title-section {
+    margin-bottom: 50px;
+  }
+  .step-section .nav-tabs.process-model li {
+    width: 50%;
+  }
+  .client-section .owl-carousel .slide {
+    width: 170px;
+  }
+  .client-section .owl-carousel .slide img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .owl-1 .slide .slide-content {
+    padding: 20px 0 50px;
+  }
+  .features-section .owl-2 .owl-dots {
+    bottom: -25%;
+  }
+  .features-section .mockup {
+    top: 139px;
+    left: 124px;
+    -webkit-transform: scale(0.291);
+            transform: scale(0.291);
+  }
+  .pricing-section .first-content .contact-us .row {
+    width: 100%;
+    margin: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p,
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
+    font-family: "Roboto", sans-serif;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p {
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
+    font-size: 35px !important;
+    margin-bottom: 16px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 span {
+    font-size: 20px;
+    color: #969696;
+    font-weight: 400;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package {
+    margin-top: 50px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row {
+    padding: 15px 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row i {
+    font-size: 30px;
+    color: #FAA831;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row p {
+    margin-bottom: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing {
+    margin-top: 30px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button {
+    background-color: #FAA831;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button a p {
+    margin: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button:active {
+    background-color: #FFF8DC;
+    color: #FAA831;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 {
+    margin-top: 50px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content {
+    padding: 40px;
+    background-color: #FAA831;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p,
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
+    font-family: "Roboto", sans-serif;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p {
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
+    font-size: 35px !important;
+    margin-bottom: 16px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 span {
+    font-size: 20px;
+    color: #2c2c2c;
+    font-weight: 400;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package {
+    margin-top: 50px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row {
+    padding: 15px 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row i {
+    font-size: 30px;
+    color: #FCFF80;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row p {
+    margin-bottom: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing {
+    margin-top: 30px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    color: #FAA831;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button a p {
+    margin: 0;
+  }
+  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button:active {
+    background-color: #FFF8DC;
+    color: #FAA831;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .cta-section .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cta-section .row .content .title-cta {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .step-section .nav-tabs.process-model li {
+    width: 50%;
+  }
+  .client-section .owl-carousel .slide {
+    width: 170px;
   }
 }
 /*# sourceMappingURL=app.css.map */

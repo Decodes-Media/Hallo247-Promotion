@@ -36,7 +36,6 @@ $(document).ready(function() {
     });
     $("#carousel-3").owlCarousel({
         loop: true,
-        margin: 20,
         nav: false,
         dots: false,
         touchDrag: true,
@@ -44,15 +43,21 @@ $(document).ready(function() {
         autoplayTimeout: 5000,
         smartSpeed: 1500,
         responsive: {
-            768: {
+            300: {
                 items: 3,
                 margin: 10
             },
-            1024: {
-                items: 3
+            768: {
+                items: 6,
+                margin: 10
             },
-            1440: {
-                items: 3
+            1024: {
+                items: 7,
+                margin: 5
+            },
+            1366: {
+                items: 8,
+                margin: 5
             }
         }
     });
@@ -78,7 +83,6 @@ $(function() {
 
     AOS.init({
         duration: 1200,
-        delay: 300
     });
 
 });
@@ -94,4 +98,11 @@ jQuery(document).ready(function($) {
         $curr.prevAll().addClass("visited");
     });
 
+});
+
+let mainNav = document.getElementById('js-menu');
+let navBarToggler = document.getElementById('toggler-js-menu');
+
+navBarToggler.addEventListener('click', function() {
+    mainNav.classList.toggle('active');
 });
