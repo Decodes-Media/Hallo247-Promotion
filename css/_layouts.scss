@@ -104,8 +104,10 @@ nav {
                     font-family: $font-family-serif;
                     font-weight: $font-weight-regular;
                     font-size: 18px;
+                    transition: all 0.2s ease-in;
                     &:hover {
                         color: $primary-color;
+                        transition: all 0.2s ease-in;
                     }
                 }
             }
@@ -116,6 +118,7 @@ nav {
             border: none;
             border-radius: 50px;
             width: 100%;
+            transition: all 0.5s;
             &:hover {
                 background-color: rgba(250, 168, 49, 0.70);
                 transition: all 0.5s;
@@ -231,8 +234,14 @@ footer {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: all .3s ease-in;
                     i {
                         font-size: 20px;
+                    }
+                    &:hover {
+                        color: $primary-color;
+                        background-color: $secondary-color;
+                        transition: all .3s ease-in;
                     }
                 }
             }
@@ -252,9 +261,10 @@ footer {
             background-color: $primary-color;
             box-shadow: 10px 10px 30px rgba(243, 243, 243, 0.15);
             border-radius: 10px;
+            transition: all 0.3s ease-in;
             &:hover {
                 background-color: $secondary-color;
-                transition: all 0.3s;
+                transition: all 0.3s ease-in;
                 a {
                     color: $primary-color;
                 }
@@ -301,10 +311,6 @@ footer {
 
 @media screen and (max-width: $bp-sm) {
     footer {
-        .logo {
-            display: flex;
-            justify-content: center;
-        }
         .contact-email {
             .btn-footer {
                 padding: 20px 40px;
@@ -354,6 +360,10 @@ footer {
         }
     }
     footer {
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
         .contact {
             margin-top: 20px;
             h4 {

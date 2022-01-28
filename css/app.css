@@ -265,10 +265,14 @@ nav .row ul li a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 nav .row ul li a:hover {
   color: #FAA831;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 nav .row button {
@@ -277,6 +281,8 @@ nav .row button {
   border: none;
   border-radius: 50px;
   width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 nav .row button:hover {
@@ -421,10 +427,19 @@ footer .contact ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 footer .contact ul li a i {
   font-size: 20px;
+}
+
+footer .contact ul li a:hover {
+  color: #FAA831;
+  background-color: #FFF8DC;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 footer .contact-email {
@@ -445,12 +460,14 @@ footer .contact-email .btn-footer {
   -webkit-box-shadow: 10px 10px 30px rgba(243, 243, 243, 0.15);
           box-shadow: 10px 10px 30px rgba(243, 243, 243, 0.15);
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 footer .contact-email .btn-footer:hover {
   background-color: #FFF8DC;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 footer .contact-email .btn-footer:hover a {
@@ -481,14 +498,6 @@ footer .contact-email .btn-footer a {
 }
 
 @media screen and (max-width: 768px) {
-  footer .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   footer .contact-email .btn-footer {
     padding: 20px 40px;
   }
@@ -523,6 +532,14 @@ footer .contact-email .btn-footer a {
   }
   nav .responsive-menu button a p {
     font-size: 24px;
+  }
+  footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer .contact {
     margin-top: 20px;
@@ -579,9 +596,11 @@ footer .contact-email .btn-footer a {
   background-color: rgba(250, 168, 49, 0.95);
   border: none;
   border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.owl-1 .slide .slide-content .text-content button:hover {
+.owl-1 .slide .slide-content .text-content button:hover, .owl-1 .slide .slide-content .text-content button:active {
   background-color: rgba(250, 168, 49, 0.7);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1089,13 +1108,15 @@ footer .contact-email .btn-footer a {
   width: 80%;
   padding: 20px 0;
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .pricing-section .second-content .point-wrapper .button-launch a:hover {
   background-color: #FFF8DC;
   color: #FAA831;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .cta-section {
@@ -1139,12 +1160,14 @@ footer .contact-email .btn-footer a {
   background-color: #FFFFFF;
   border-radius: 10px;
   width: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.cta-section .row .content .btn-cta:hover {
+.cta-section .row .content .btn-cta:hover, .cta-section .row .content .btn-cta:hover {
   background-color: #FFF8DC;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .cta-section .row .content .btn-cta a {

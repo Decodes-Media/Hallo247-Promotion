@@ -31,7 +31,9 @@
                     background-color: rgba(250, 168, 49, 0.95);
                     border: none;
                     border-radius: 50px;
-                    &:hover {
+                    transition: all 0.5s;
+                    &:hover,
+                    &:active {
                         background-color: rgba(250, 168, 49, 0.70);
                         transition: all 0.5s;
                     }
@@ -443,10 +445,11 @@
                     width: 80%;
                     padding: 20px 0;
                     border-radius: 10px;
+                    transition: all 0.3s ease-in;
                     &:hover {
                         background-color: $secondary-color;
                         color: $primary-color;
-                        transition: all 0.3s;
+                        transition: all 0.3s ease-in;
                     }
                 }
             }
@@ -485,9 +488,11 @@
                 background-color: $white;
                 border-radius: 10px;
                 width: 100%;
+                transition: all 0.3s ease-in;
+                &:hover,
                 &:hover {
                     background-color: $secondary-color;
-                    transition: all 0.3s;
+                    transition: all 0.3s ease-in;
                 }
                 a {
                     text-decoration: none;
