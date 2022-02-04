@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #FFFFFF !important;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
 }
 
 h1,
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   font-weight: 700 !important;
 }
 
@@ -136,12 +136,12 @@ nav .responsive-menu {
   z-index: 5;
   padding: 100px 50px;
   width: 100%;
-  -webkit-transform: translateX(90%);
-  transform: translateX(90%);
-  -webkit-transition: -webkit-transform .5s ease-in;
-  transition: -webkit-transform .5s ease-in;
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  -webkit-transform: translateX(380px);
+  transform: translateX(380px);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 nav .responsive-menu ul {
@@ -211,8 +211,20 @@ nav .responsive-menu button a i {
 
 nav .responsive-menu.active {
   display: block;
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+nav .overlay {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 nav .row {
@@ -331,7 +343,10 @@ nav .row button a i {
 }
 
 footer {
-  background-color: #242424;
+  background-image: url(../image/bg-pattern_3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 90px 0;
 }
 
@@ -343,20 +358,17 @@ footer .logo {
 footer .logo img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
-  padding: 30px;
-  background-color: #FFFFFF;
-  border-radius: 10px;
 }
 
 footer hr {
-  border: 1px solid #FFFFFF;
+  border: 1px solid;
   margin-bottom: 60px;
 }
 
 footer h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #242424;
   margin-bottom: 20px;
 }
 
@@ -371,7 +383,7 @@ footer .site-links li {
 
 footer .site-links li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #242424;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -391,7 +403,7 @@ footer .contact a p {
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #242424;
 }
 
 footer .contact a p:hover {
@@ -412,7 +424,7 @@ footer .contact ul li {
 }
 
 footer .contact ul li a {
-  color: #FFFFFF;
+  color: #242424;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -436,8 +448,7 @@ footer .contact ul li a i {
 }
 
 footer .contact ul li a:hover {
-  color: #FAA831;
-  background-color: #FFF8DC;
+  color: #FFFFFF;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
@@ -447,9 +458,9 @@ footer .contact-email {
 }
 
 footer .contact-email h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   font-size: 40px;
-  color: #FFFFFF;
+  color: #242424;
   margin-bottom: 30px;
 }
 
@@ -465,20 +476,19 @@ footer .contact-email .btn-footer {
 }
 
 footer .contact-email .btn-footer:hover {
-  background-color: #FFF8DC;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 footer .contact-email .btn-footer:hover a {
-  color: #FAA831;
+  color: #FFFFFF;
 }
 
 footer .contact-email .btn-footer a {
   text-decoration: none;
   font-size: 24px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #242424;
   font-weight: 500;
 }
 
@@ -572,11 +582,11 @@ footer .contact-email .btn-footer a {
 }
 
 .owl-1 .slide .slide-content .text-content {
-  padding-left: 305px;
+  padding-left: 130px;
 }
 
 .owl-1 .slide .slide-content .text-content h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   color: #1c1c1c;
   font-weight: 600;
   margin-bottom: 35px;
@@ -624,7 +634,7 @@ footer .contact-email .btn-footer a {
 }
 
 .owl-1 .slide .slide-content .text-content button a p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 20px;
   color: #FFFFFF;
@@ -768,7 +778,7 @@ footer .contact-email .btn-footer a {
 }
 
 .benefit-section .card-wrapper .card-box .card-content .card-back .card-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   margin-bottom: 25px;
 }
 
@@ -802,7 +812,7 @@ footer .contact-email .btn-footer a {
 }
 
 .benefit-section .card-wrapper-mobile .card-mobile .card-content .text-content .card-title h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
 .benefit-section .card-wrapper-mobile .card-mobile .card-content .text-content p {
@@ -961,7 +971,7 @@ footer .contact-email .btn-footer a {
 
 .pricing-section .first-content .contact-us h4 {
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
 .pricing-section .first-content .contact-us a {
@@ -978,7 +988,7 @@ footer .contact-email .btn-footer a {
 
 .pricing-section .first-content .price p,
 .pricing-section .first-content .price h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
 .pricing-section .first-content .price p.txt-one, .pricing-section .first-content .price p.txt-two {
@@ -1092,6 +1102,13 @@ footer .contact-email .btn-footer a {
   margin-top: 130px;
 }
 
+.pricing-section .second-content .point-wrapper .button-launch p {
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .pricing-section .second-content .point-wrapper .button-launch a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1101,7 +1118,7 @@ footer .contact-email .btn-footer a {
           justify-content: center;
   text-decoration: none;
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   font-size: 20px;
   font-weight: 500;
   background-color: #FAA831;
@@ -1117,6 +1134,15 @@ footer .contact-email .btn-footer a {
   color: #FAA831;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+
+.pricing-section .terms-conditions {
+  padding: 50px;
+  text-align: center;
+}
+
+.pricing-section .terms-conditions p {
+  margin-bottom: 10px;
 }
 
 .cta-section {
@@ -1150,7 +1176,7 @@ footer .contact-email .btn-footer a {
 }
 
 .cta-section .row .content .title-cta {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   color: #FFFFFF;
 }
 
@@ -1185,7 +1211,7 @@ footer .contact-email .btn-footer a {
 }
 
 .step-section .title-section {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   color: #FAA831;
   text-align: center;
   margin-bottom: 140px;
@@ -1202,6 +1228,8 @@ footer .contact-email .btn-footer a {
   line-height: 26px;
   margin-bottom: 12px;
   text-align: center;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .step-section .nav-tabs.process-model {
@@ -1247,7 +1275,7 @@ footer .contact-email .btn-footer a {
 }
 
 .step-section .nav-tabs.process-model li a h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   color: #969696;
   margin-top: 20px;
 }
@@ -1342,6 +1370,8 @@ footer .contact-email .btn-footer a {
 .client-section .owl-carousel .slide img {
   width: 100%;
   height: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 #button {
@@ -1382,7 +1412,7 @@ footer .contact-email .btn-footer a {
   visibility: visible;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .owl-1 .slide .slide-content .text-content {
     padding-left: 125px;
   }
@@ -1516,14 +1546,17 @@ footer .contact-email .btn-footer a {
     bottom: -25%;
   }
   .features-section .mockup {
-    top: 139px;
-    left: 126px;
-    -webkit-transform: scale(0.299);
-            transform: scale(0.299);
+    top: 145px;
+    left: 125px;
+    -webkit-transform: scale(0.287);
+            transform: scale(0.287);
   }
   .pricing-section .first-content .contact-us .row {
     width: 100%;
     margin: 0;
+  }
+  .pricing-section .terms-conditions {
+    padding: 40px 20px;
   }
   .pricing-section .second-content-mobile .box-pricing-1 .box-content {
     padding: 40px;
@@ -1532,7 +1565,7 @@ footer .contact-email .btn-footer a {
   }
   .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p,
   .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
   }
   .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p {
     font-weight: 500;
@@ -1578,7 +1611,7 @@ footer .contact-email .btn-footer a {
             justify-content: center;
     text-decoration: none;
     color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     font-size: 20px;
     font-weight: 500;
   }
@@ -1601,7 +1634,7 @@ footer .contact-email .btn-footer a {
   }
   .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p,
   .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
   }
   .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p {
     font-weight: 500;
@@ -1647,7 +1680,7 @@ footer .contact-email .btn-footer a {
             justify-content: center;
     text-decoration: none;
     color: #FAA831;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     font-size: 20px;
     font-weight: 500;
   }
@@ -1707,7 +1740,7 @@ footer .contact-email .btn-footer a {
   }
   .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p,
   .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
   }
   .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p {
     font-weight: 500;
@@ -1753,7 +1786,7 @@ footer .contact-email .btn-footer a {
             justify-content: center;
     text-decoration: none;
     color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     font-size: 20px;
     font-weight: 500;
   }
@@ -1776,7 +1809,7 @@ footer .contact-email .btn-footer a {
   }
   .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p,
   .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
   }
   .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p {
     font-weight: 500;
@@ -1822,7 +1855,7 @@ footer .contact-email .btn-footer a {
             justify-content: center;
     text-decoration: none;
     color: #FAA831;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     font-size: 20px;
     font-weight: 500;
   }

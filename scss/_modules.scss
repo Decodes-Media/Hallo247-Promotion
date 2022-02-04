@@ -10,7 +10,8 @@
             display: flex;
             align-items: center;
             .text-content {
-                padding-left: 305px;
+                // padding-left: 305px;
+                padding-left: 130px;
                 h1 {
                     font-family: $font-family;
                     color: $font-color;
@@ -48,7 +49,7 @@
                             margin-right: 15px;
                         }
                         p {
-                            font-family: $font-family-serif;
+                            font-family: $font-family;
                             font-weight: $font-weight-bold;
                             font-size: 20px;
                             color: $white;
@@ -159,7 +160,7 @@
                     opacity: 0;
                     transform: rotateY(-180deg);
                     .card-title {
-                        font-family: $font-family-serif;
+                        font-family: $font-family;
                         margin-bottom: 25px;
                     }
                     p {
@@ -188,7 +189,7 @@
                     .card-title {
                         margin-bottom: 30px;
                         h4 {
-                            font-family: $font-family-serif;
+                            font-family: $font-family;
                         }
                     }
                     p {
@@ -325,7 +326,7 @@
             }
             h4 {
                 font-size: 25px;
-                font-family: $font-family-serif;
+                font-family: $font-family;
             }
             a {
                 text-decoration: none;
@@ -341,7 +342,7 @@
         .price {
             p,
             h3 {
-                font-family: $font-family-serif;
+                font-family: $font-family;
             }
             p {
                 &.txt-one,
@@ -433,12 +434,18 @@
             }
             .button-launch {
                 margin-top: 130px;
+                p {
+                    margin-bottom: 0;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: $font-weight-medium;
+                }
                 a {
                     display: flex;
                     justify-content: center;
                     text-decoration: none;
                     color: $white;
-                    font-family: $font-family-serif;
+                    font-family: $font-family;
                     font-size: 20px;
                     font-weight: $font-weight-medium;
                     background-color: $primary-color;
@@ -453,6 +460,13 @@
                     }
                 }
             }
+        }
+    }
+    .terms-conditions {
+        padding: 50px;
+        text-align: center;
+        p {
+            margin-bottom: 10px;
         }
     }
 }
@@ -479,7 +493,7 @@
         .content {
             z-index: 99;
             .title-cta {
-                font-family: $font-family-serif;
+                font-family: $font-family;
                 color: $white;
             }
             .btn-cta {
@@ -525,6 +539,8 @@
                 line-height: 26px;
                 margin-bottom: 12px;
                 text-align: center;
+                color: $white;
+                font-weight: $font-weight-medium;
             }
         }
     }
@@ -561,7 +577,7 @@
                         border-radius: 50%;
                     }
                     h5 {
-                        font-family: $font-family-serif;
+                        font-family: $font-family;
                         color: $grey;
                         margin-top: 20px;
                     }
@@ -651,6 +667,7 @@
             img {
                 width: 100%;
                 height: auto;
+                filter: grayscale(100%);
                 // transform: scale(0.9);
             }
         }
@@ -692,7 +709,7 @@
     }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .owl-1 {
         .slide {
             .slide-content {
@@ -896,9 +913,9 @@
             }
         }
         .mockup {
-            top: 139px;
-            left: 126px;
-            transform: scale(0.299);
+            top: 145px;
+            left: 125px;
+            transform: scale(0.287);
         }
     }
     .pricing-section {
@@ -910,6 +927,9 @@
                 }
             }
         }
+        .terms-conditions {
+            padding: 40px 20px;
+        }
         .second-content-mobile {
             .box-pricing-1 {
                 .box-content {
@@ -919,7 +939,7 @@
                     .head {
                         p,
                         h3 {
-                            font-family: $font-family-serif;
+                            font-family: $font-family;
                         }
                         p {
                             font-weight: $font-weight-medium;
@@ -959,7 +979,7 @@
                                     justify-content: center;
                                     text-decoration: none;
                                     color: $white;
-                                    font-family: $font-family-serif;
+                                    font-family: $font-family;
                                     font-size: 20px;
                                     font-weight: $font-weight-medium;
                                     p {
@@ -985,7 +1005,7 @@
                     .head {
                         p,
                         h3 {
-                            font-family: $font-family-serif;
+                            font-family: $font-family;
                         }
                         p {
                             font-weight: $font-weight-medium;
@@ -1025,7 +1045,7 @@
                                     justify-content: center;
                                     text-decoration: none;
                                     color: $primary-color;
-                                    font-family: $font-family-serif;
+                                    font-family: $font-family;
                                     font-size: 20px;
                                     font-weight: $font-weight-medium;
                                     p {
@@ -1117,7 +1137,7 @@
                     .head {
                         p,
                         h3 {
-                            font-family: $font-family-serif;
+                            font-family: $font-family;
                         }
                         p {
                             font-weight: $font-weight-medium;
@@ -1157,7 +1177,7 @@
                                     justify-content: center;
                                     text-decoration: none;
                                     color: $white;
-                                    font-family: $font-family-serif;
+                                    font-family: $font-family;
                                     font-size: 20px;
                                     font-weight: $font-weight-medium;
                                     p {
@@ -1183,7 +1203,7 @@
                     .head {
                         p,
                         h3 {
-                            font-family: $font-family-serif;
+                            font-family: $font-family;
                         }
                         p {
                             font-weight: $font-weight-medium;
@@ -1223,7 +1243,7 @@
                                     justify-content: center;
                                     text-decoration: none;
                                     color: $primary-color;
-                                    font-family: $font-family-serif;
+                                    font-family: $font-family;
                                     font-size: 20px;
                                     font-weight: $font-weight-medium;
                                     p {

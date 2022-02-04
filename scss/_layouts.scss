@@ -12,9 +12,9 @@ nav {
         z-index: 5;
         padding: 100px 50px;
         width: 100%;
-        -webkit-transform: translateX(90%);
-        transform: translateX(90%);
-        transition: transform .5s ease-in;
+        -webkit-transform: translateX(380px);
+        transform: translateX(380px);
+        transition: transform 250ms ease-in-out;
         ul {
             display: block;
             list-style: none;
@@ -70,9 +70,17 @@ nav {
         }
         &.active {
             display: block;
-            -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            transition: transform 250ms ease-in-out;
         }
+    }
+    .overlay {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
     }
     .row {
         position: relative;
@@ -163,26 +171,26 @@ nav {
 }
 
 footer {
-    background-color: $black;
+    background-image: url(../image/bg-pattern_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 90px 0;
     .logo {
         margin-bottom: 60px;
         overflow: hidden;
         img {
             object-fit: scale-down;
-            padding: 30px;
-            background-color: $white;
-            border-radius: 10px;
         }
     }
     hr {
-        border: 1px solid $white;
+        border: 1px solid;
         margin-bottom: 60px;
     }
     h4 {
         font-family: $font-family-serif;
         font-weight: $font-weight-bold;
-        color: $white;
+        color: $black;
         margin-bottom: 20px;
     }
     .site-links {
@@ -192,7 +200,7 @@ footer {
             margin-bottom: 20px;
             a {
                 text-decoration: none;
-                color: $white;
+                color: $black;
                 font-size: 24px;
                 font-weight: $font-weight-regular;
                 line-height: 28px;
@@ -210,7 +218,7 @@ footer {
                 font-size: 24px;
                 font-weight: $font-weight-regular;
                 line-height: 28px;
-                color: $white;
+                color: $black;
                 &:hover {
                     color: $primary-color;
                     transition: 0.3s;
@@ -225,7 +233,7 @@ footer {
                 display: inline-block;
                 margin-right: 10px;
                 a {
-                    color: $white;
+                    color: $black;
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
@@ -239,8 +247,7 @@ footer {
                         font-size: 20px;
                     }
                     &:hover {
-                        color: $primary-color;
-                        background-color: $secondary-color;
+                        color: $white;
                         transition: all .3s ease-in;
                     }
                 }
@@ -252,7 +259,7 @@ footer {
         h2 {
             font-family: $font-family;
             font-size: 40px;
-            color: $white;
+            color: $black;
             margin-bottom: 30px;
         }
         .btn-footer {
@@ -263,17 +270,16 @@ footer {
             border-radius: 10px;
             transition: all 0.3s ease-in;
             &:hover {
-                background-color: $secondary-color;
                 transition: all 0.3s ease-in;
                 a {
-                    color: $primary-color;
+                    color: $white;
                 }
             }
             a {
                 text-decoration: none;
                 font-size: 24px;
                 line-height: 28px;
-                color: $white;
+                color: $black;
                 font-weight: $font-weight-medium;
             }
         }
