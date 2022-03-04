@@ -106,3 +106,7 @@ let navBarToggler = document.getElementById('toggler-js-menu');
 navBarToggler.addEventListener('click', function() {
     mainNav.classList.toggle('active');
 });
+
+document.getElementsByClassName('.single').addEventListener('click', function() {
+    mainNav.removeClass('active')
+})
