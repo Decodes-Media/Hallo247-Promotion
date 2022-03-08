@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
     $("#carousel-3").owlCarousel({
         loop: true,
-        nav: false,
+        nav: true,
         dots: false,
         touchDrag: true,
         autoplay: true,

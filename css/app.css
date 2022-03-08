@@ -1374,6 +1374,31 @@ footer .contact-email .btn-footer a {
           filter: grayscale(100%);
 }
 
+.client-section .owl-carousel .owl-nav button {
+  border: none !important;
+  outline: none !important;
+}
+
+.client-section .owl-carousel .owl-nav .owl-prev,
+.client-section .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 60px !important;
+  font-weight: 700 !important;
+  background: none !important;
+  color: #FAA831 !important;
+}
+
+.client-section .owl-carousel .owl-nav .owl-prev {
+  left: -5%;
+}
+
+.client-section .owl-carousel .owl-nav .owl-next {
+  right: -5%;
+}
+
 #button {
   text-decoration: none;
   display: inline-block;
