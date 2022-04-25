@@ -953,36 +953,75 @@ footer .contact-email .btn-footer a {
   margin-bottom: 35px;
 }
 
+.pricing-section .first-content .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .pricing-section .first-content .contact-us .row {
-  width: 60%;
+  width: 40%;
   background-color: #FFFFFF;
-  padding: 35px 60px;
+  padding: 35px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(10px 20px 40px rgba(206, 156, 49, 0.1));
+          filter: drop-shadow(10px 20px 40px rgba(206, 156, 49, 0.1));
 }
 
-.pricing-section .first-content .contact-us img {
-  width: 100%;
+.pricing-section .first-content .contact-us .row figure {
+  margin: 0;
+}
+
+.pricing-section .first-content .contact-us .row figure img {
+  width: 150px;
+  height: auto;
+}
+
+.pricing-section .first-content .contact-us i {
+  font-size: 42px;
+  color: #FAA831;
 }
 
 .pricing-section .first-content .contact-us h4 {
   font-size: 25px;
   font-family: "Roboto", serif;
+  margin-bottom: 20px;
 }
 
 .pricing-section .first-content .contact-us a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
-  color: #FAA831;
-  margin-bottom: 0;
-  font-size: 15px;
-  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.pricing-section .first-content .contact-us a:hover {
+.pricing-section .first-content .contact-us a i {
+  color: #FAA831;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.pricing-section .first-content .contact-us a p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FAA831;
+  margin-bottom: 0;
+}
+
+.pricing-section .first-content .contact-us a:hover i, .pricing-section .first-content .contact-us a:hover p {
   color: #ffe180;
 }
 
@@ -1019,7 +1058,7 @@ footer .contact-email .btn-footer a {
   padding: 20px 60px;
   border-radius: 10px;
   position: relative;
-  height: 880px;
+  height: 930px;
 }
 
 .pricing-section .second-content .card-bg--white {
@@ -1080,7 +1119,12 @@ footer .contact-email .btn-footer a {
 }
 
 .pricing-section .second-content .point-wrapper .point .row i.fa-check-circle {
-  color: #FAA831;
+  color: #FFFFFF;
+}
+
+.pricing-section .second-content .point-wrapper .point .row .note {
+  text-align: center;
+  font-weight: 400;
 }
 
 .pricing-section .second-content .point-wrapper .point:hover {
@@ -1098,8 +1142,12 @@ footer .contact-email .btn-footer a {
   font-weight: 500;
 }
 
+.pricing-section .second-content .point-wrapper .point:hover i.fa-check-circle {
+  color: #FAA831;
+}
+
 .pricing-section .second-content .point-wrapper .button-launch {
-  margin-top: 130px;
+  margin-top: 120px;
 }
 
 .pricing-section .second-content .point-wrapper .button-launch p {
@@ -1117,21 +1165,20 @@ footer .contact-email .btn-footer a {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  color: #FFFFFF;
   font-family: "Roboto", serif;
   font-size: 20px;
   font-weight: 500;
-  background-color: #FAA831;
-  width: 80%;
+  width: 95%;
   padding: 20px 0;
   border-radius: 10px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  background-color: #FFFFFF;
+  color: #FAA831;
 }
 
 .pricing-section .second-content .point-wrapper .button-launch a:hover {
   background-color: #FFF8DC;
-  color: #FAA831;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -1372,6 +1419,15 @@ footer .contact-email .btn-footer a {
   height: auto;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.client-section .owl-carousel .slide:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .client-section .owl-carousel .owl-nav button {
@@ -1392,11 +1448,11 @@ footer .contact-email .btn-footer a {
 }
 
 .client-section .owl-carousel .owl-nav .owl-prev {
-  left: -5%;
+  left: -3%;
 }
 
 .client-section .owl-carousel .owl-nav .owl-next {
-  right: -5%;
+  right: -3%;
 }
 
 #button {
@@ -1463,6 +1519,9 @@ footer .contact-email .btn-footer a {
     left: 350px;
     right: 351px;
   }
+  .pricing-section .second-content {
+    height: 960px;
+  }
   .pricing-section .second-content .card-bg--white {
     width: 630px;
     left: 500px;
@@ -1496,12 +1555,15 @@ footer .contact-email .btn-footer a {
     -webkit-transform: scale(0.73);
             transform: scale(0.73);
   }
+  .pricing-section .first-content .contact-us .row {
+    width: 55%;
+  }
+  .pricing-section .second-content {
+    height: 980px;
+  }
   .pricing-section .second-content .card-bg--white {
     width: 500px;
     left: 450px;
-  }
-  .pricing-section .first-content .contact-us .row {
-    width: 90%;
   }
 }
 
@@ -1547,10 +1609,11 @@ footer .contact-email .btn-footer a {
             transform: scale(0.56);
   }
   .pricing-section .first-content .contact-us .row {
+    width: 75%;
     padding: 35px 30px;
   }
   .pricing-section .second-content {
-    height: 1000px;
+    height: 1190px;
   }
   .pricing-section .second-content .card-bg--white {
     width: 370px;
@@ -1572,6 +1635,27 @@ footer .contact-email .btn-footer a {
   }
 }
 
+@media screen and (min-device-width: 820px) and (max-device-height: 1180px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .features-section .mockup {
+    top: 100px;
+    left: 170px;
+    -webkit-transform: scale(0.56);
+            transform: scale(0.56);
+  }
+  .pricing-section .first-content .contact-us .row {
+    width: 70%;
+  }
+  .pricing-section .second-content {
+    height: 1070px;
+  }
+  .pricing-section .second-content .point-wrapper .point {
+    padding: 20px 30px;
+  }
+  .cta-section .row .content .btn-cta {
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .owl-1 .slide .slide-content {
     padding: 20px 0 50px;
@@ -1588,124 +1672,49 @@ footer .contact-email .btn-footer a {
   .pricing-section .first-content .contact-us .row {
     width: 100%;
     margin: 0;
+    padding: 35px 10px;
+  }
+  .pricing-section .first-content .contact-us .row figure img {
+    width: 110px;
+    height: auto;
   }
   .pricing-section .terms-conditions {
     padding: 40px 20px;
   }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content {
+  .pricing-section .second-content-mobile .box-pricing .box-content {
     padding: 40px;
-    background-color: #FFFFFF;
+    background-color: #FAA831;
     border-radius: 10px;
   }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p,
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
-    font-family: "Roboto", serif;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head p {
-    font-weight: 500;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 {
-    font-size: 35px !important;
-    margin-bottom: 16px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .head h3 span {
-    font-size: 20px;
-    color: #969696;
-    font-weight: 400;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package {
-    margin-top: 50px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row {
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .row {
     padding: 15px 0;
   }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row i {
-    font-size: 30px;
-    color: #FAA831;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .row p {
-    margin-bottom: 0;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing {
-    margin-top: 30px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button {
-    background-color: #FAA831;
-    border: none;
-    padding: 20px;
-    width: 100%;
-    border-radius: 10px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-decoration: none;
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .row i {
+    font-size: 28px;
     color: #FFFFFF;
-    font-family: "Roboto", serif;
-    font-size: 20px;
-    font-weight: 500;
   }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button a p {
-    margin: 0;
-  }
-  .pricing-section .second-content-mobile .box-pricing-1 .box-content .package .btn-pricing button:active {
-    background-color: #FFF8DC;
-    color: #FAA831;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 {
-    margin-top: 50px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content {
-    padding: 40px;
-    background-color: #FAA831;
-    border-radius: 10px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p,
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
-    font-family: "Roboto", serif;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head p {
-    font-weight: 500;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 {
-    font-size: 35px !important;
-    margin-bottom: 16px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .head h3 span {
-    font-size: 20px;
-    color: #2c2c2c;
-    font-weight: 400;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package {
-    margin-top: 50px;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row {
-    padding: 15px 0;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row i {
-    font-size: 30px;
-    color: #FCFF80;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .row p {
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .row p {
     margin-bottom: 0;
+    font-weight: 600;
+    color: #FFFFFF;
   }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing {
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .row .note-mobile {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .btn-pricing {
     margin-top: 30px;
   }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button {
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .btn-pricing button {
     background-color: #FFFFFF;
     border: none;
     padding: 20px;
     width: 100%;
     border-radius: 10px;
   }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button a {
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .btn-pricing button a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1713,15 +1722,15 @@ footer .contact-email .btn-footer a {
         -ms-flex-pack: center;
             justify-content: center;
     text-decoration: none;
+  }
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .btn-pricing button a p {
     color: #FAA831;
     font-family: "Roboto", serif;
     font-size: 20px;
     font-weight: 500;
-  }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button a p {
     margin: 0;
   }
-  .pricing-section .second-content-mobile .box-pricing-2 .box-content .package .btn-pricing button:active {
+  .pricing-section .second-content-mobile .box-pricing .box-content .package .btn-pricing button:active {
     background-color: #FFF8DC;
     color: #FAA831;
     -webkit-transition: all 0.3s;
@@ -1758,14 +1767,20 @@ footer .contact-email .btn-footer a {
     bottom: -25%;
   }
   .features-section .mockup {
-    top: 139px;
-    left: 124px;
-    -webkit-transform: scale(0.291);
-            transform: scale(0.291);
+    top: 185px;
+    left: 106px;
+    -webkit-transform: scale(0.241);
+            transform: scale(0.241);
+  }
+  .pricing-section .first-content .contact-us a p {
+    font-size: 14px;
   }
   .pricing-section .first-content .contact-us .row {
     width: 100%;
     margin: 0;
+  }
+  .pricing-section .first-content .contact-us .row figure img {
+    width: 90px;
   }
   .pricing-section .second-content-mobile .box-pricing-1 .box-content {
     padding: 40px;

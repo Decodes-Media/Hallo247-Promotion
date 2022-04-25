@@ -314,28 +314,58 @@
     .first-content {
         margin-bottom: 35px;
         .contact-us {
+            display: flex;
+            justify-content: center;
             .row {
-                width: 60%;
+                width: 40%;
                 background-color: $white;
-                padding: 35px 60px;
+                padding: 35px 20px;
                 display: flex;
                 align-items: center;
+                border-radius: 10px;
+                filter: drop-shadow(10px 20px 40px rgba(206, 156, 49, 0.1));
+                
+                figure {
+                    margin: 0;
+                    img {
+                        width: 150px;
+                        height: auto;
+                    }
+                }
             }
-            img {
-                width: 100%;
+            i {
+                font-size: 42px;
+                color: $primary-color;
             }
             h4 {
                 font-size: 25px;
                 font-family: $font-family;
+                margin-bottom: 20px;
             }
             a {
+                display: flex;
+                align-items: center;
                 text-decoration: none;
-                color: $primary-color;
-                margin-bottom: 0;
-                font-size: 15px;
-                font-weight: $font-weight-regular;
+                margin-bottom: 10px;
+                
+                i {
+                    color: $primary-color;
+                    font-size: 18px;
+                    margin-right: 10px;
+                }
+                
+
+                p {
+                    font-size: 18px;
+                    font-weight: $font-weight-medium;
+                    color: $primary-color;
+                    margin-bottom: 0;
+                }
+
                 &:hover {
-                    color: #ffe180;
+                    i, p {
+                        color: #ffe180;
+                    }
                 }
             }
         }
@@ -374,7 +404,7 @@
         padding: 20px 60px;
         border-radius: 10px;
         position: relative;
-        height: 880px;
+        height: 930px;
         .card-bg--white {
             background-color: $white;
             position: absolute;
@@ -415,8 +445,12 @@
                             color: $grey-three;
                         }
                         &.fa-check-circle {
-                            color: $primary-color;
+                            color: $white;
                         }
+                    }
+                    .note {
+                        text-align: center;
+                        font-weight: $font-weight-regular;
                     }
                 }
                 &:hover {
@@ -430,10 +464,15 @@
                         color: $primary-color;
                         font-weight: $font-weight-medium;
                     }
+                    i {
+                        &.fa-check-circle {
+                            color: $primary-color;
+                        }
+                    }
                 }
             }
             .button-launch {
-                margin-top: 130px;
+                margin-top: 120px;
                 p {
                     margin-bottom: 0;
                     color: $white;
@@ -444,18 +483,17 @@
                     display: flex;
                     justify-content: center;
                     text-decoration: none;
-                    color: $white;
                     font-family: $font-family;
                     font-size: 20px;
                     font-weight: $font-weight-medium;
-                    background-color: $primary-color;
-                    width: 80%;
+                    width: 95%;
                     padding: 20px 0;
                     border-radius: 10px;
                     transition: all 0.3s ease-in;
+                    background-color: $white;
+                    color: $primary-color;
                     &:hover {
                         background-color: $secondary-color;
-                        color: $primary-color;
                         transition: all 0.3s ease-in;
                     }
                 }
@@ -668,7 +706,16 @@
                 width: 100%;
                 height: auto;
                 filter: grayscale(100%);
+                transition: all .3s ease-in-out;
                 // transform: scale(0.9);
+            }
+
+            &:hover {
+
+                img {
+                    filter: grayscale(0%);
+                    transition: all .3s ease-in-out;
+                }
             }
         }
         .owl-nav {
@@ -687,10 +734,10 @@
                 color: $primary-color !important;
             }
             .owl-prev {
-                left: -5%;
+                left: -3%;
             }
             .owl-next {
-                right: -5%;
+                right: -3%;
             }
         }
     }
@@ -771,6 +818,7 @@
     }
     .pricing-section {
         .second-content {
+            height: 960px;
             .card-bg--white {
                 width: 630px;
                 left: 500px;
@@ -824,19 +872,18 @@
         }
     }
     .pricing-section {
-        .second-content {
-            .card-bg--white {
-                width: 500px;
-                left: 450px;
-            }
-        }
-    }
-    .pricing-section {
         .first-content {
             .contact-us {
                 .row {
-                    width: 90%;
+                    width: 55%;
                 }
+            }
+        }
+        .second-content {
+            height: 980px;
+            .card-bg--white {
+                width: 500px;
+                left: 450px;
             }
         }
     }
@@ -896,12 +943,13 @@
         .first-content {
             .contact-us {
                 .row {
+                    width: 75%;
                     padding: 35px 30px;
                 }
             }
         }
         .second-content {
-            height: 1000px;
+            height: 1190px;
             .card-bg--white {
                 width: 370px;
                 left: 340px;
@@ -925,6 +973,45 @@
             .slide {
                 width: 90%;
                 height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 820px) and (max-device-height: 1180px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .features-section {
+        .mockup {
+            top: 100px;
+            left: 170px;
+            transform: scale(0.56);
+        }
+    }
+    
+    .pricing-section {
+        .first-content {
+            .contact-us {
+                .row {
+                    width: 70%;
+                }
+            }
+        }
+        
+        .second-content {
+            height: 1070px;
+            .point-wrapper {
+                .point {
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+
+    .cta-section {
+        .row {
+            .content {
+                .btn-cta {
+                    padding: 20px;
+                }
             }
         }
     }
@@ -956,6 +1043,13 @@
                 .row {
                     width: 100%;
                     margin: 0;
+                    padding: 35px 10px;
+                    figure {
+                        img {
+                            width: 110px;
+                            height: auto;
+                        }
+                    }
                 }
             }
         }
@@ -963,105 +1057,46 @@
             padding: 40px 20px;
         }
         .second-content-mobile {
-            .box-pricing-1 {
-                .box-content {
-                    padding: 40px;
-                    background-color: $white;
-                    border-radius: 10px;
-                    .head {
-                        p,
-                        h3 {
-                            font-family: $font-family;
-                        }
-                        p {
-                            font-weight: $font-weight-medium;
-                        }
-                        h3 {
-                            font-size: 35px !important;
-                            margin-bottom: 16px;
-                            span {
-                                font-size: 20px;
-                                color: $grey;
-                                font-weight: $font-weight-regular;
-                            }
-                        }
-                    }
-                    .package {
-                        margin-top: 50px;
-                        .row {
-                            padding: 15px 0;
-                            i {
-                                font-size: 30px;
-                                color: $primary-color;
-                            }
-                            p {
-                                margin-bottom: 0;
-                            }
-                        }
-                        .btn-pricing {
-                            margin-top: 30px;
-                            button {
-                                background-color: $primary-color;
-                                border: none;
-                                padding: 20px;
-                                width: 100%;
-                                border-radius: 10px;
-                                a {
-                                    display: flex;
-                                    justify-content: center;
-                                    text-decoration: none;
-                                    color: $white;
-                                    font-family: $font-family;
-                                    font-size: 20px;
-                                    font-weight: $font-weight-medium;
-                                    p {
-                                        margin: 0;
-                                    }
-                                }
-                                &:active {
-                                    background-color: $secondary-color;
-                                    color: $primary-color;
-                                    transition: all 0.3s;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .box-pricing-2 {
-                margin-top: 50px;
+            .box-pricing {
                 .box-content {
                     padding: 40px;
                     background-color: $primary-color;
                     border-radius: 10px;
-                    .head {
-                        p,
-                        h3 {
-                            font-family: $font-family;
-                        }
-                        p {
-                            font-weight: $font-weight-medium;
-                        }
-                        h3 {
-                            font-size: 35px !important;
-                            margin-bottom: 16px;
-                            span {
-                                font-size: 20px;
-                                color: rgb(44, 44, 44);
-                                font-weight: $font-weight-regular;
-                            }
-                        }
-                    }
+                    // .head {
+                    //     p,
+                    //     h3 {
+                    //         font-family: $font-family;
+                    //     }
+                    //     p {
+                    //         font-weight: $font-weight-medium;
+                    //     }
+                    //     h3 {
+                    //         font-size: 35px !important;
+                    //         margin-bottom: 16px;
+                    //         span {
+                    //             font-size: 20px;
+                    //             color: $grey;
+                    //             font-weight: $font-weight-regular;
+                    //         }
+                    //     }
+                    // }
                     .package {
-                        margin-top: 50px;
                         .row {
                             padding: 15px 0;
                             i {
-                                font-size: 30px;
-                                color: #FCFF80;
+                                font-size: 28px;
+                                color: $white;
                             }
                             p {
                                 margin-bottom: 0;
+                                font-weight: $font-weight-semibold;
+                                color: $white;
+                            }
+                            .note-mobile {
+                                margin-top: 10px;
+                                font-size: 16px;
+                                font-weight: $font-weight-regular;
+                                color: $white;
                             }
                         }
                         .btn-pricing {
@@ -1076,11 +1111,11 @@
                                     display: flex;
                                     justify-content: center;
                                     text-decoration: none;
-                                    color: $primary-color;
-                                    font-family: $font-family;
-                                    font-size: 20px;
-                                    font-weight: $font-weight-medium;
                                     p {
+                                        color: $primary-color;
+                                        font-family: $font-family;
+                                        font-size: 20px;
+                                        font-weight: $font-weight-medium;
                                         margin: 0;
                                     }
                                 }
@@ -1146,17 +1181,27 @@
             }
         }
         .mockup {
-            top: 139px;
-            left: 124px;
-            transform: scale(0.291);
+            top: 185px;
+            left: 106px;
+            transform: scale(0.241);
         }
     }
     .pricing-section {
         .first-content {
             .contact-us {
+                a {
+                    p {
+                        font-size: 14px;
+                    }
+                }
                 .row {
                     width: 100%;
                     margin: 0;
+                    figure {
+                        img {
+                            width: 90px;
+                        }
+                    }
                 }
             }
         }
